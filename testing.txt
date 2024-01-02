@@ -1,0 +1,494 @@
+create table workes_details(
+Id int,
+First_Name varchar(200),
+Larst_Name varchar(200),
+Gender varchar(50),
+Address varchar(200),
+City varchar(255),
+G_Mail varchar(200),
+Phone_Number int primary key
+)
+
+insert workes_details values("1","K","Durgadavy","femail","3 new street","Trichy","durgadavy22@gmail.com","948673446");
+insert workes_details values("2","K","Dayashree","femail","4 Pulimandabam road","Trichy","dayashree05@gmail.com","8784874784");
+insert workes_details values("3","S","Balaji","mail","64 nelsen road","chennai","balaji23@gmail.com","23456789");
+insert workes_details values("4","K","Baburaj","mail","32 ganapathi nager","Chennai","baburaj@gmail.com","23456789");
+insert workes_details values("5","S","Gokul","mail","44 kamala street","Trichy","gokul@gmail.com","2344545443");
+insert workes_details values("6","D","Gandi","mail","23 puja road","Chennai","gandi@gmail.com","2345454654");
+insert workes_details values("7","F","Fathima","femail","54 sunder nager","fathima@gamail.com","546468488");
+insert workes_details values("8","M","Gomathi","femail","65 santhi nager","gomathi33@gmail.com","3765777575");
+insert workes_details values("9","J","Mangalam","femail","46 pushpa nager","mangalam223@gmail.com","3737373773");
+insert workes_details values("10","H","Rockey","mail","21 amma mandabam road","rockey08@gmail.com","2727272728");
+insert workes_details values("11","K","Kamalakannan","23 acs apratment","kamalakannnan22@gmail.com","2727727727");
+insert workes_details values("12","S","Santhi","44 pathima street ","santhi22@gmail.com","27277277373");
+insert workes_details values("13","W","mathan","23 nelsen road","mathan22@gmail.com","2772662782");
+
+create table Student(
+Id int primary key ,
+Name varchar(100),
+gpa decimal(3,2)
+);
+
+alter table Student add age int;
+select * from Student
+
+insert into Student values("1","K.Anith","6.2","23");
+insert into Student values("2","S.Anandan","7.2","24");
+insert into Student values("3","M.Kamalakannan","2.2","25");
+insert into Student values("4","A.Ganthi","3.3","24");
+insert into Student values("5","B.Hari","5.5","23");
+insert into Student values("6","C.Gogul","2.3","24");
+insert into Student values("7","V.Vasu","5.5","22");
+insert into Student values("8","N.Vasanth","4.4","23");
+insert into Student values("9","J.Laxmi","2.2","25");
+insert into Student values("10","D.kamala","4.4","27");
+
+select Id,Name from Student;
+
+create table student_mark_sheet(
+Id int primary key,
+student_Name varchar(200),
+Tamil int,
+English int,
+Science int,
+Maths int,
+Social int
+);
+
+insert into student_mark_sheet values("1","K.Abi","35","44","32","43","33");
+insert into student_mark_sheet values("2","M.Anitha","23","33","34","45","45");
+insert into student_mark_sheet values("3","L.Amala","45","45","45","45","45");
+insert into student_mark_sheet values("4","M.Bala","35","34","32","45","43");
+insert into student_mark_sheet values("5","K.Bakiya","36","47","33","44","33");
+insert into student_mark_sheet values("6","S.Bama","45","34","36","46","43");
+insert into student_mark_sheet values("7","D.Durgadavi","50","45","44","44","44");
+insert into student_mark_sheet values("8","R.Fathima","36","44","32","46","30");
+insert into student_mark_sheet values("9","F.Famala","35","46","32","33","33");
+insert into student_mark_sheet values("10","L.Gandi","35","44","32","43","33");
+insert into student_mark_sheet values("11","K.Gokul","36","33","35","22","33");
+insert into student_mark_sheet values("12","N.Ganesh","22","44","33","43","33");
+insert into student_mark_sheet values("13","B.Gomathi","35","44","32","43","33");
+insert into student_mark_sheet values("14","M.Hari","35","45","37","43","33");
+insert into student_mark_sheet values("15","S.Santhi","35","43","32","43","32");
+insert into student_mark_sheet values("16","M.Mathi","35","44","32","43","33");
+insert into student_mark_sheet values("17","K.Kapali","45","34","32","33","33");
+insert into student_mark_sheet values("18","K.shreeAbi","33","44","31","11","22");
+insert into student_mark_sheet values("19","R.Roopashree","35","44","32","43","33");
+insert into student_mark_sheet values("20","R.Nandhini","35","44","32","43","33");
+
+select * from student_mark_sheet;
+alter table student_mark_sheet add Total_mark int;
+
+SELECT * FROM student_mark_sheet; 
+SELECT id,student_Name FROM student_mark_sheet; 
+
+
+create table customer(
+customer_Id int primary key,
+customer_Name varchar(200),
+address varchar(200),
+city varchar(50),
+postalcode int,
+country varchar(50)
+);
+
+insert into customer values("1","K.laxmi","No.3 New street","Trichy","620006","Delhi");
+insert into customer values("2","M.kamalakannan","No 4 singam nager","Trichy","620007","Delhi");
+insert into customer values("3","L.Durga","23 roopa street","Chennai","900888","Mumbai");
+insert into customer values("4","J.Jamal","4 santhi street","Trichy","344543","Kerla");
+insert into customer values("5","K.Ranga","54 gandhi nager","Trichy","620004","Andra");
+insert into customer values("6","H.hari","54 ganapathi nager","Salam","600378","Kernatika");
+insert into customer values("7","G.tachla","33 wockenda","Black Panther","620006","Southi");
+insert into customer values("8","L.Karapu","65 sangali nager","Chennai","645454","Malashia");
+insert into customer values("9","S.Santhi","65 kalpakam mandabam","Salam","246405","Delhi");
+insert into customer values("10","K.kandi","22 balage street","Trichy","056665","Kerla");
+insert into customer values("11","O.ratha","No.4 street","Nagerkovel","650000","Bkar");
+
+select * from customer;
+
+
+ create table Employe(
+ Emp_Id int primary key,
+ FirstName varchar(200),
+ LastName varchar(200),
+ Emp_Age int,
+ Emp_zone varchar(50)
+ );
+ 
+ insert into Employe values("1","Ranga","Raja","23","North");
+ insert into Employe values("2","Roopa","Shree","22","South");
+ insert into Employe values("3","Laxmi","Kannan","33","Wast");
+ insert into Employe values("4","Durga","Davi","23","North");
+ insert into Employe values("5","Daya","Shree","21","East");
+ select * from Employe;
+
+ create table Categories(
+ Categorie_Id int,
+ Categorie_Name varchar(200),
+ Description varchar(200)
+ );
+ insert into Categories values("1","Beverages","soft dtinks,coffees,teas,beers,and ales");
+ insert into Categories values("2","Condiments","sweet and savory sauces, relishes, spreads, and seasonings");
+ insert into Categories values("3","Confections","Desserts, candies,and sweet breads");
+ insert into Categories values("4","Dairy products","cheese");
+ insert into Categories values("5","Grains/Cereals","Breads crackers, pasta, and cereal");
+ insert into Categories values("6","Meat/Poultry","prepared meats");
+ insert into Categories values("7","Produce","Dried fruit and bean curd");
+ insert into Categories values("8","Seafood","seaweed and fish");
+select * from Categories;
+ 
+ create table shipper(
+shipper_Id int primary key,
+shipper_Name varchar(200),
+phone_Number int2
+);
+
+ select * from shipper;
+ insert into shipper values("1","speedy empress");
+ insert into shipper values("2","takker zone");
+ insert into shipper values("3","United Package");
+ insert into shipper values("4","Federal Shipping");
+ 
+ alter table shipper drop column phone_Number;
+
+
+create table produts(
+produtId int primary key,
+produtName varchar(200),
+supplierId int,
+unit varchar(200),
+price int
+);
+
+insert into produts values("1","Chais","1","10 boxes x20 bags","18");
+insert into produts values("2","Chang","1","24-12 oz bottles","19");
+insert into produts values("3","Aniseed Syrup","1","12-550 ml bottles","10");
+insert into produts values("4","Chef Anoton's Cajun seasoning","2","48-60 oz jors","22");
+insert into produts values("5","Chefe Anton's Gumbo Mix","2","36 boxes","21.35");
+insert into produts values("6","Grandma's Boy senbeer","3","12-9 oz jars","25");
+select * from produts;
+
+create table Oeder(
+orderId int primary key,
+customer_Id int,
+Employe_Id int,
+orderdate varchar(20),
+shipper_Id int
+);
+insert into Oeder values("2020001","99","1","11/12/2020","3");
+insert into oeder values("2020002","45","2","23/02/2020","2");
+insert into oeder values("2020003","35","1","24/11/2020","3");
+insert into oeder values("2020004","44","2","24/04/2020","1");
+insert into oeder values("2020005","45","2","20/05/2020","2");
+insert into oeder values("2020006","36","1","04/08/2020","3");
+insert into oeder values("2020007","90","1","01/02/2020","1");
+insert into oeder values("2020008","22","2","05/12/2020","1");
+insert into oeder values("2020009","77","2","24/07/2020","3");
+insert into oeder values("2020010","25","1","20/09/2020","3");
+insert into oeder values("2020011","88","1","06/10/2020","1");
+insert into oeder values("2020012","55","2","22/09/2020","3");
+insert into oeder values("2020013","66","1","31/07/2020","3");
+insert into oeder values("2020014","77","2","21/06/2020","2");
+insert into oeder values("2020015","88","2","22/12/2020","2");
+insert into oeder values("2020016","99","1","26/11/2020","2");
+insert into oeder values("2020017","57","1","22/07/2020","2");
+insert into oeder values("2020018","67","1","24/11/2020","1");
+insert into oeder values("2020019","09","2","24/02/2020","1");
+
+select * from oeder;
+
+create table college_student(
+Student_Id int primary key,
+student_Name varchar(400),
+student_Age int,
+student_Class varchar(200),
+phone_number varchar(200)
+);
+select * from college_student;
+
+insert into college_student values("01","Aaron","21","II-BCA-B","94827996277");
+insert into college_student values("02","Anitha","22","II-BCA-B","9737737373");
+insert into college_student values("03","Akil","24","II-BCA-B","8373737373");
+insert into college_student values("04","Andal","21","II-BCA-B","38938383838");
+insert into college_student values("05","Akila","22","II-BCA-B","398389398398");
+insert into college_student values("06","Aishwariya","21","II-BCA-B","94827996277");
+insert into college_student values("07","Ajay","21","II-BCA-B","94827996277");
+insert into college_student values("08","Akilean","21","II-BCA-B","94827996277");
+insert into college_student values("09","Ammu","23","II-BCA-B","34566893838");
+insert into college_student values("10","Aanandhi","21","II-BCA-B","38383838393");
+insert into college_student values("11","Arul","22","II-BCA-B","9398398383");
+insert into college_student values("12","Arwin","21","II-BCA-B","9434398389");
+insert into college_student values("13","Bakiya","21","II-BCA-B","94827996277");
+insert into college_student values("14","Barani","21","II-BCA-B","398339838938");
+insert into college_student values("15","Barath","22","II-BCA-B","9298289299");
+insert into college_student values("16","Brgavi","21","II-BCA-B","484848993988");
+insert into college_student values("17","santhos","20","II-BCA-B","39839839309");
+insert into college_student values("18","Danaval","21","II-BCA-B","2983298399");
+insert into college_student values("19","Deepa","22","II-BCA-B","2982982923");
+insert into college_student values("20","Dhamodaran","21","II-BCA-B","2983983982");
+insert into college_student values("21","Dhanus","22","II-BCA-B","398384984894");
+insert into college_student values("22","Dhiva","21","II-BCA-B","9482793344334");
+insert into college_student values("23","Dinesh","22","II-BCA-B","983988298398");
+insert into college_student values("24","Divya","21","II-BCA-B","3893892989882");
+insert into college_student values("25","Durgaprasath","21","II-BCA-B","398398238");
+insert into college_student values("26","Ganesh","21","II-BCA-B","378389398898");
+insert into college_student values("27","Gayu","21","II-BCA-B","398398393447");
+insert into college_student values("28","Gokul","21","II-BCA-B","39839839838");
+insert into college_student values("29","Gopinath","21","II-BCA-B","38939839838");
+insert into college_student values("30","Gothem","22","II-BCA-B","93893983983");
+insert into college_student values("31","Guru","21","II-BCA-B","9398398398");
+insert into college_student values("32","Hama","22","II-BCA-B","99839839398");
+insert into college_student values("33","Hari","21","II-BCA-B","3983983988398");
+insert into college_student values("34","Haripriya","21","II-BCA-B","39839838333");
+insert into college_student values("35","Harini","21","II-BCA-B","93983983983");
+insert into college_student values("36","Harish","22","II-BCA-B","38793747474");
+insert into college_student values("37","Indrani","22","II-BCA-B","93983948");
+insert into college_student values("38","santhi","21","II-BCA-B","3747747474277");
+insert into college_student values("39","Janani","21","II-BCA-B","449848989498");
+insert into college_student values("40","Jayaraj","21","II-BCA-B","984989884984");
+insert into college_student values("41","Jawhar","21","II-BCA-B","998498498498");
+insert into college_student values("42","Jeva","22","II-BCA-B","498489984984");
+insert into college_student values("43","Jeren","22","II-BCA-B","998498849884");
+insert into college_student values("44","Kala","21","II-BCA-B","49849849984");
+insert into college_student values("45","Kannan","21","II-BCA-B","4987984984987");
+insert into college_student values("46","Kannal","21","II-BCA-B","94984984977");
+insert into college_student values("47","Karhi","21","II-BCA-B","984984984984");
+insert into college_student values("48","Karhikrishan","22","II-BCA-B","499849844");
+insert into college_student values("49","Karhika","20","II-BCA-B","949849849884");
+insert into college_student values("50","Keerthina","20","II-BCA-B","9498498398");
+insert into college_student values("51","Kerthi","20","II-BCA-B","387497498498");
+insert into college_student values("52","Kiruba","21","II-BCA-B","94949498984");
+insert into college_student values("53","Kishore","21","II-BCA-B","93984989884");
+insert into college_student values("54","Kowsi","21","II-BCA-B","490840490409");
+insert into college_student values("55","krish","21","II-BCA-B","9849805044");
+insert into college_student values("56","Gugan","20","II-BCA-B","9849849477");
+insert into college_student values("57","Krishnan","21","II-BCA-B","94827996277");
+insert into college_student values("58","Moorthi","21","II-BCA-B","94827996277");
+insert into college_student values("59","Leela","21","II-BCA-B","94827996277");
+insert into college_student values("60","Lalitha","21","II-BCA-B","94827996277");
+insert into college_student values("61","Latha","21","II-BCA-B","94827996277");
+insert into college_student values("62","Roopa","21","II-BCA-B","94827996277");
+insert into college_student values("63","Sarathikannan","21","II-BCA-B","94827996277");
+insert into college_student values("64","Maddy","21","II-BCA-B","94827996277");
+insert into college_student values("65","Madon","21","II-BCA-B","94827996277");
+insert into college_student values("66","Magesh","21","II-BCA-B","94827996277");
+insert into college_student values("67","Mageshvary","21","II-BCA-B","94827996277");
+insert into college_student values("68","Pram","21","II-BCA-B","94827996277");
+insert into college_student values("69","mani","21","II-BCA-B","94827996277");
+insert into college_student values("70","Manival","21","II-BCA-B","94827996277");
+insert into college_student values("71","Mari","21","II-BCA-B","94827996277");
+insert into college_student values("72","Maden","21","II-BCA-B","94827996277");
+insert into college_student values("73","Mathan","21","II-BCA-B","94827996277");
+insert into college_student values("74","Madhi","21","II-BCA-B","94827996277");
+insert into college_student values("75","Meera","21","II-BCA-B","94827996277");
+insert into college_student values("76","Magenathan","21","II-BCA-B","94827996277");
+insert into college_student values("77","Mohan","21","II-BCA-B","94827996277");
+insert into college_student values("78","Mithun","21","II-BCA-B","94827996277");
+insert into college_student values("79","Murialy","21","II-BCA-B","94827996277");
+insert into college_student values("80","Muthisami","21","II-BCA-B","94827996277");
+insert into college_student values("81","Nabiya","21","II-BCA-B","94827996277");
+insert into college_student values("82","Nagaraj","21","II-BCA-B","94827996277");
+insert into college_student values("83","Ngenbran","21","II-BCA-B","94827996277");
+insert into college_student values("84","Nandhini","21","II-BCA-B","94827996277");
+insert into college_student values("85","Niven","21","II-BCA-B","94827996277");
+insert into college_student values("86","Nithies","21","II-BCA-B","94827996277");
+insert into college_student values("87","Nivetha","21","II-BCA-B","94827996277");
+insert into college_student values("88","Nijanthan","21","II-BCA-B","94827996277");
+insert into college_student values("89","Karthiraja","21","II-BCA-B","94827996277");
+insert into college_student values("90","Babu","21","II-BCA-B","94827996277");
+insert into college_student values("91","Pramanini","21","II-BCA-B","94827996277");
+insert into college_student values("92","Prtha","21","II-BCA-B","94827996277");
+insert into college_student values("93","Prthiban","21","II-BCA-B","94827996277");
+insert into college_student values("94","Pavithra","21","II-BCA-B","94827996277");
+insert into college_student values("95","Bens","21","II-BCA-B","94827996277");
+insert into college_student values("96","Praba","21","II-BCA-B","94827996277");
+insert into college_student values("97","Brabakeran","21","II-BCA-B","94827996277");
+insert into college_student values("98","Proburaj","21","II-BCA-B","94827996277");
+insert into college_student values("99","Prasana","21","II-BCA-B","94827996277");
+insert into college_student values("100","Prasanth","21","II-BCA-B","94827996277");
+insert into college_student values("101","Priven","21","II-BCA-B","94827996277");
+insert into college_student values("102","vigenesh","21","II-BCA-B","94827996277");
+insert into college_student values("103","Ratha","21","II-BCA-B","94827996277");
+insert into college_student values("104","Ragu","21","II-BCA-B","94827996277");
+insert into college_student values("105","ragul","21","II-BCA-B","94827996277");
+insert into college_student values("106","Rajaseker","21","II-BCA-B","94827996277");
+insert into college_student values("107","Raji","21","II-BCA-B","94827996277");
+insert into college_student values("108","Raju","21","II-BCA-B","94827996277");
+insert into college_student values("109","Ramiya","21","II-BCA-B","94827996277");
+insert into college_student values("110","Rani","21","II-BCA-B","94827996277");
+insert into college_student values("111","Ranjith","21","II-BCA-B","94827996277");
+insert into college_student values("112","Renganayaki","21","II-BCA-B","94827996277");
+insert into college_student values("113","Rengaprasd","21","II-BCA-B","94827996277");
+insert into college_student values("114","Rishi","21","II-BCA-B","94827996277");
+insert into college_student values("115","Riyas","21","II-BCA-B","94827996277");
+insert into college_student values("116","Rogehini","21","II-BCA-B","94827996277");
+insert into college_student values("117","Ruba","21","II-BCA-B","94827996277");
+insert into college_student values("118","Sathoush","22","II-BCA-B","97894988489");
+insert into college_student values("119","Saker","20","II-BCA-B","9894984949");
+insert into college_student values("120","Saranya","21","II-BCA-B","984984098477");
+insert into college_student values("121","Saro","21","II-BCA-B","94827996277");
+insert into college_student values("122","Saravana","21","II-BCA-B","94827996277");
+insert into college_student values("123","Sathish","21","II-BCA-B","94827996277");
+insert into college_student values("124","Selvem","21","II-BCA-B","94827996277");
+insert into college_student values("125","Sendel","21","II-BCA-B","94827996277");
+insert into college_student values("126","Shamim","21","II-BCA-B","9978498984");
+insert into college_student values("127","Siva","21","II-BCA-B","9984989849");
+insert into college_student values("128","Sibi","21","II-BCA-B","994989833");
+insert into college_student values("129","Sinvash","21","II-BCA-B","9984989884");
+insert into college_student values("130","Sofia","21","II-BCA-B","9840909409");
+insert into college_student values("131","Vanketas","21","II-BCA-B","98498498988");
+ select * from college_student;
+
+CREATE TABLE Persons (
+    ID int NOT NULL UNIQUE,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int
+);
+select * from Persons;
+insert into Persons values("1","Durgadavi","K","24");
+insert into Persons values("2","Rangaraja","K","20");
+insert into Persons values("3","Laxmi","L","22");
+insert into Persons values("4","Roopa","R","19");
+insert into Persons values("5","Sonthos","P","20");
+insert into Persons values("6","Gandi","T","22");
+insert into Persons values("7","Fathima","I","25");
+insert into Persons values("8","Karhi","J","22");
+insert into Persons values("9","Harish","H","21");
+insert into Persons values("10","Janani","K","28");
+insert into Persons values("12","Vasu","G","23");
+insert into Persons values("13","Babu","K","22");
+insert into Persons values("14","Santhi","U","26");
+insert into Persons values("15","Parthiban","P","27");
+insert into Persons values("16","davi","K","22");
+insert into Persons values("17","Bakiya","B","21");
+insert into Persons values("18","Kerthina","G","22");
+insert into Persons values("19","Jana","J","25");
+insert into Persons values("20","Shree","C","23");
+insert into Persons values("21","Damo","X","22");
+insert into Persons values("22","Niven","L","26");
+insert into Persons values("23","Zoko","K","24");
+insert into Persons values("24","Jane","J","28");
+insert into Persons values("25","Kala","L","34");
+insert into Persons values("26","Mani","M","20");
+
+
+create table employee(
+emp_id int primary key auto_increment,
+ename varchar (30) not null,
+job_desc varchar(20),
+saleary int,
+);
+
+
+insert branch values("1","chennai","16 abc road");
+insert branch values("2","mumbai","17 nelsen road");
+insert branch values("3","coimbatore","18 genapathi nager");
+insert branch values("4","delhi","19 suspha road");
+
+insert employee values(1,"raju","admain","15000","1");
+insert employee values(2,"kanna","developer","20000","2");
+insert employee values(3,"gokul","admain","15000","3");
+insert employee values(4,"bakiya","desiner","14000","1");
+insert employee values(5,"durga","admain","15000","2");
+insert employee values(6,"laxmi","developer","20000","2");
+insert employee values(7,"kamala","admain","14000","3");
+insert employee values(8,"roopa","developer","15000","3");
+insert employee values(9,"shree","wibdeveloper","14000","");
+insert employee values(10,"kerthna","wibdeveloper","15000","");
+
+DELETE from employee
+WHERE emp_id = 7;
+
+Liking eName
+SELECT * FROM employee
+WHERE ename LIKE 'L%';
+
+SELECT * FROM employee
+WHERE ename LIKE '%R%';
+
+SELECT * FROM employee
+WHERE ename LIKE '__%a';
+
+SELECT emp_id,ename,saleary FROM employee
+WHERE saleary>15000; 
+SELECT emp_id,ename,saleary FROM employee
+WHERE saleary<15000; 
+
+SELECT * FROM employee
+WHERE job_desc='admain' OR job_desc='developer';
+
+select * from employee;
+select * from branch;
+  
+select the 18000 to 20000 this saleary member show me
+SELECT * FROM employee
+WHERE saleary BETWEEN 18000 AND 20000
+LIMIT 5; 
+
+show me the developer saleary details
+SELECT * FROM employee
+WHERE job_desc="developer"
+ORDER BY saleary DESC;
+
+
+SELECT DISTINCT job_desc
+FROM employee;  
+
+
+SELECT * FROM employee
+ORDER BY job_desc,ename; 
+
+SELECT * FROM employee
+ORDER BY branch_id; 
+
+SELECT COUNT(*) FROM employee;
+
+SELECT AVG(saleary) FROM employee;
+
+SELECT * FROM employee
+WHERE saleary = (SELECT MAX(saleary)
+FROM employee); 
+
+SELECT * FROM employee
+WHERE saleary = (SELECT min(saleary)
+FROM employee);  
+
+SELECT UCASE(ename),saleary
+FROM employee; using output is ename was caps letter and saleary
+
+SELECT ename,CHAR_LENGTH(ename)
+FROM employee; how many words in the ename emample(rangaraja)(9)
+
+SELECT ename,CONCAT("Rs.",saleary)
+FROM employee;
+
+SELECT job_desc,COUNT(emp_id) count
+FROM employee
+GROUP BY job_desc;
+
+
+CREATE TABLE clients (
+client_id INT PRIMARY KEY AUTO_INCREMENT,
+location VARCHAR(30) NOT NULL,
+addr VARCHAR(200) );
+select * from Clients;
+
+INSERT INTO clients VALUES(1,"NewYork","25 10th Block");
+INSERT INTO clients VALUES(2,"Coimbatore","120 15th Block");
+INSERT INTO clients VALUES(3,"London","21 ABC Road");
+
+SELECT * FROM branch
+UNION 
+SELECT * FROM clients;
+
+SELECT * FROM branch
+UNION ALL
+SELECT * FROM clients; 
+
+
+SELECT CURDATE() 'start date',
+ DATE_ADD(CURDATE(),INTERVAL 1 DAY) 'one day later',
+ DATE_ADD(CURDATE(),INTERVAL 1 WEEK) 'one week later',
+ DATE_ADD(CURDATE(),INTERVAL 1 MONTH) 'one month later',
+ DATE_ADD(CURDATE(),INTERVAL 1 YEAR) 'one year later';
